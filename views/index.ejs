@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <title>Home</title>
   </head>
   <body>
-    <h1>Welcome to My Express App</h1>
     <ul>
-        <% messagesDB.forEach((item) => {%>
+      <% messagesDB.forEach((item) => { %>
+      <li>
+        <div class="message-box">
+          <a href="/message/<%= item.id %>">
             <h2><%= item.user %></h2>
-            <h3><%= item.added %></h3>
+            <h3><%= item.added.toLocaleString() %></h3>
             <h3><%= item.text %></h3>
-            <%})%>
+          </a>
+        </div>
+      </li>
+      <% }) %>
     </ul>
-</body>
+    <a href="/new" class="new-message-btn">+ New Message</a>
+  </body>
 </html>

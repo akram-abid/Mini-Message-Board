@@ -1,3 +1,154 @@
-* {
-    color: rgb(10, 10, 10)
+/* General Page Styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+/* Heading */
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 40px;
+}
+
+/* Message List (Home Page) */
+ul {
+  list-style: none;
+  padding: 0;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.message-box {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s, box-shadow 0.3s;
+}
+
+.message-box:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.1);
+}
+
+.message-box a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.message-box h2 {
+  margin: 0 0 10px;
+  color: #2980b9;
+}
+
+.message-box h3 {
+  margin: 5px 0;
+  font-weight: normal;
+  color: #666;
+}
+
+/* Single Message Page */
+.single-message {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+.single-message h1 {
+  margin-top: 0;
+  font-size: 2em;
+  color: #2c3e50;
+}
+
+.single-message h3 {
+  color: #888;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+.single-message p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #444;
+}
+
+.single-message a {
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #3498db;
+  font-weight: bold;
+}
+
+.single-message a:hover {
+  text-decoration: underline;
+}
+
+
+/* Button to go to new message form */
+.new-message-btn {
+  display: inline-block;
+  background-color: #3498db;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-bottom: 30px;
+  transition: background-color 0.2s ease;
+}
+
+.new-message-btn:hover {
+  background-color: #2980b9;
+}
+
+/* Form styling */
+form {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input[type="text"] {
+  padding: 10px;
+  font-size: 1em;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+button[type="submit"] {
+  background-color: #2ecc71;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #27ae60;
 }
