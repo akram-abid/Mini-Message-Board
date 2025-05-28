@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const path = require("node:path");
+const port = process.env.PORT || 3000
 
 const messages = [
   {
@@ -53,6 +54,6 @@ app.get("/message/:id", (req, res) => {
   }
 });
 
-app.listen(3000,  () => {
-  console.log(`My first Express app - listening on port 3000!`);
+app.listen(port,  () => {
+  console.log(`My first Express app - listening on port `, port);
 });
